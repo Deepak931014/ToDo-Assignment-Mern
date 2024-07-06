@@ -32,10 +32,8 @@ Server :
     ```bash
     npm install
     ```
-
-3. create .env file in backend:
       
-4. Start the server:
+3. Start the server:
 
     ```bash
     npm start
