@@ -10,7 +10,7 @@
 1. Clone the repository:
 
     ```bash
-   git clone https://github.com/Gaurimusmade/Todo-List.git
+   git clone https://github.com/Deepak931014/ToDo-Assignment-Mern.git
     ```
 
 2. Change into the project directory:
