@@ -5,7 +5,7 @@ interface Task {
 
 const getall = async (setTasks: React.Dispatch<React.SetStateAction<Task[]>>): Promise<void> => {
   try {
-    const res = await fetch('http://localhost:5002/todo/');
+    const res = await fetch('https://todo-assignment-mern.onrender.com/todo/');
     const resData = await res.json();
     setTasks(resData);
   } catch (error) {
@@ -15,7 +15,7 @@ const getall = async (setTasks: React.Dispatch<React.SetStateAction<Task[]>>): P
 
 const addnew = async (task: string, setTasks: React.Dispatch<React.SetStateAction<Task[]>>): Promise<void> => {
   try {
-    const res = await fetch('http://localhost:5002/todo/new', {
+    const res = await fetch('https://todo-assignment-mern.onrender.com/todo/new', {
       method: 'POST',
       body: JSON.stringify({ task }),
       headers: {
@@ -40,7 +40,7 @@ const updateTask = async (
   setTasks: React.Dispatch<React.SetStateAction<Task[]>>
 ): Promise<void> => {
   try {
-    const res = await fetch('http://localhost:5002/todo/update', {
+    const res = await fetch('https://todo-assignment-mern.onrender.com/todo/update', {
       method: 'PUT',
       body: JSON.stringify({ id, task: editableText }),
       headers: {
@@ -66,7 +66,7 @@ const updateTask = async (
 const deletetask = async (id: string, setTasks: React.Dispatch<React.SetStateAction<Task[]>>): Promise<void> => {
   try {
     console.log(id)
-    const res = await fetch('http://localhost:5002/todo/delete', {
+    const res = await fetch('https://todo-assignment-mern.onrender.com/todo/delete', {
       method: 'DELETE',
       body: JSON.stringify({ id }),
       headers: {
