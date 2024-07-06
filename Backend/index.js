@@ -3,7 +3,7 @@ const app=express();
 
 const cors = require('cors');
 app.use(cors({
-    origin: 'https://to-do-assignment-mern.vercel.app/', 
+    origin: 'https://todo-task-assignment.netlify.app', 
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   }));
